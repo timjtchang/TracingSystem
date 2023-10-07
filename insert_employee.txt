@@ -1,0 +1,79 @@
+-- Inserting Employees
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (1, 'John Smith', '101A', 1, '123-456-7890', 'john.smith@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (2, 'Alice Johnson', '102B', 1, '234-567-8901', 'alice.j@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (3, 'Bob Brown', '103C', 1, '345-678-9012', 'bob.b@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (4, 'Eva White', '201A', 2, '456-789-0123', 'eva.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (5, 'Michael Davis', '202B', 2, '567-890-1234', 'michael.d@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (6, 'Sophia Lee', '203C', 2, '678-901-2345', 'sophia.l@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (7, 'Daniel Martinez', '301A', 3, '789-012-3456', 'daniel.m@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (8, 'Olivia Wilson', '302B', 3, '890-123-4567', 'olivia.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (9, 'Liam Johnson', '303C', 3, '901-234-5678', 'liam.j@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (10, 'Emma Brown', '401A', 4, '012-345-6789', 'emma.b@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (11, 'William Lee', '402B', 4, '123-456-7890', 'william.l@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (12, 'Ava Garcia', '403C', 4, '234-567-8901', 'ava.g@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (13, 'James Miller', '501A', 5, '345-678-9012', 'james.m@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (14, 'Mia Davis', '502B', 5, '456-789-0123', 'mia.d@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (15, 'Benjamin Wilson', '503C', 5, '567-890-1234', 'benjamin.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (16, 'Amelia Lee', '601A', 6, '678-901-2345', 'amelia.l@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (17, 'Lucas White', '602B', 6, '789-012-3456', 'lucas.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (18, 'Evelyn Moore', '603C', 6, '890-123-4567', 'evelyn.m@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (19, 'Alexander Johnson', '701A', 7, '901-234-5678', 'alexander.j@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (20, 'Harper Wilson', '702B', 7, '012-345-6789', 'harper.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (21, 'Charlotte Lee', '703C', 7, '123-456-7890', 'charlotte.l@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (22, 'Liam Brown', '801A', 8, '234-567-8901', 'liam.b@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (23, 'Ava Wilson', '802B', 8, '345-678-9012', 'ava.w@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (24, 'James Lee', '803C', 8, '456-789-0123', 'james.l@gmail.com');
+
+INSERT INTO Employee (ID, name, office_number, floor_number, phone_number, email_address)
+VALUES (25, 'Emma White', '901A', 9, '567-890-1234', 'emma.w@gmail.com');
+
+
+
+SELECT * FROM Employee;
