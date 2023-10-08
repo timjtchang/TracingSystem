@@ -4,10 +4,13 @@ https://livesql.oracle.com/
 
 Write a query to output the most-self-reported symptom.
 
-
-
-SELECT symptom_ID, COUNT(*) AS freq
-FROM Symptom
-GROUP BY symptom_ID
-ORDER BY freq DESC 
-FETCH FIRST 1 ROWS ONLY;
+WITH symCounts AS (
+    SELECT symptom_ID, COUNT(*) AS freq FROM Symptom
+    GROUP BY symptom_ID
+)
+SELECT symptom_ID, freq
+FROM (
+    SELECT symptom_ID, freq, RANK() OVER (ORDER BY freq DESC) AS rnk
+    FROM symCounts
+)
+WHERE rnk = 1;
