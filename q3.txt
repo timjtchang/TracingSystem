@@ -5,13 +5,18 @@ https://livesql.oracle.com/
 
 Write a query to output the 'sickest' floor.
 
-
-SELECT floor_number, COUNT(*) AS freq
-FROM (
-    SELECT *
-    FROM Case
-    JOIN Employee ON Case.employee_ID = Employee.ID
+WITH FloorCounts AS (
+    SELECT floor_number, COUNT(*) AS freq
+    FROM (
+        SELECT *
+        FROM Case
+        JOIN Employee ON Case.employee_ID = Employee.ID
+    )
+    GROUP BY floor_number
 )
-GROUP BY floor_number
-ORDER BY COUNT(*) DESC
-FETCH FIRST 1 ROWS ONLY;
+SELECT floor_number, freq
+FROM (
+    SELECT floor_number, freq, RANK() OVER (ORDER BY freq DESC) AS rnk
+    FROM FloorCounts
+)
+WHERE rnk = 1;
