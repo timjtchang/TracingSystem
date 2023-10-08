@@ -1,6 +1,9 @@
 
 I implement hw2 using live sql provided by oracle.
- 
+
+In the meeting table, I assume that there are at most 4 people in an office, so there are 4 entities for 4 employees. 
+This means the office is allowed to have 4 people join the room.
+For example, if in a meeting table, employee_ID_1 is 1, and employee_ID_2 is 2, that means employee 1 and employee 2 are in the same meeting.
 
 Before notifying employees due to a positive case, the backend system will conduct a comparison and refrain from notifying employees who have been tested within the last 10 days.
 

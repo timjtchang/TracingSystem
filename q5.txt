@@ -1,0 +1,19 @@
+--q5
+
+implement the question using live sql provided by Oracle 
+https://livesql.oracle.com/
+
+
+The company aims to encourage employees to purchase all types of insurance. 
+To identify employees who have bought all types of insurance, the management needs to filter individuals using a division operation.
+
+SELECT ID, name FROM employee
+WHERE NOT EXISTS(
+
+    SELECT * FROM Insurance
+    WHERE NOT EXISTS(
+
+    	SELECT * FROM InsuranceRecord
+    	WHERE insuranceRecord.insurance_type = Insurance.id AND InsuranceRecord.employee_id = employee.id
+    )
+)

@@ -1,0 +1,13 @@
+--q2
+implement the question using live sql provided by Oracle 
+https://livesql.oracle.com/
+
+Write a query to output the most-self-reported symptom.
+
+
+
+SELECT symptom_ID, COUNT(*) AS freq
+FROM Symptom
+GROUP BY symptom_ID
+ORDER BY freq DESC 
+FETCH FIRST 1 ROWS ONLY;
